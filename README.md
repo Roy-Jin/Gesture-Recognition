@@ -1,0 +1,1 @@
+基于TensorFlowJs + Mediapipe Hands制作的手势识别抓取Demo，使用Web Speech API朗读抓取的物体

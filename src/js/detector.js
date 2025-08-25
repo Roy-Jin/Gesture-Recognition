@@ -1,4 +1,4 @@
-import * as handPoseDetection from '@tensorflow-models/hand-pose-detection';
+import * as handPoseDetection from '/node_modules/@tensorflow-models/hand-pose-detection';
 import { drawHands, clearCanvas } from './renderer.js';
 import { updateInteraction } from './interaction.js';
 import { updateStatus, updateInteractionStatus } from './utils.js';
