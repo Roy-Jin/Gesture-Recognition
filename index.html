@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Roy-Jin | 手势识别Demo</title>
+
+    <link rel="icon" href="https://rj-cloud.pages.dev/ForMe/avatar-nobg.png" type="image/png">
+    <link rel="shortcut icon" href="https://rj-cloud.pages.dev/ForMe/avatar.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="./src/index.css">
+</head>
+
+<body>
+
+  <div class="video-container">
+    <video id="video" autoplay playsinline></video>
+    <canvas id="output"></canvas>
+  </div>
+
+  <div class="interaction-area">
+    <div class="object object-1">Ciallo~</div>
+    <div class="object object-2">你好呀</div>
+    <div class="object object-3">我是</div>
+    <div class="object object-4">Roy-Jin</div>
+  </div>
+
+  <div class="info">
+    <div id="status" class="status">状态: 等待启动...</div>
+    <button id="startBtn" class="btn">启动摄像头</button>
+    <div id="interactionStatus" class="status">手势状态: 未检测到手势</div>
+  </div>
+  <script type="module" src="./src/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  width: 100dvw;
+  height: 100dvh;
+}
+
+.video-container {
+  width: 100dvw;
+  height: 100dvh;
+  position: fixed;
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+}
+
+video {
+  height: 100%;
+  width: 100%;
+  transform: scaleX(-1);
+  background: #000;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+}
+
+.interaction-area {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.object {
+  position: absolute;
+  border-radius: 99px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  user-select: none;
+  cursor: pointer;
+  transition: transform 0.2s;
+  border: 1px solid white;
+  background: rgba(0, 0, 0, 0.5);
+  width: 150px;
+  height: 100px;
+  top: 30%;
+}
+
+.object:hover {
+  transform: scale(1.05);
+}
+
+.object-1 {
+  left: 20%;
+}
+
+.object-2 {
+  left: 40%;
+}
+
+.object-3 {
+  left: 60%;
+}
+
+.object-4 {
+  left: 80%;
+}
+
+.info {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.status {
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.btn {
+  background: linear-gradient(45deg, #00c9ff, #92fe9d);
+  border: none;
+  padding: 12px 25px;
+  border-radius: 50px;
+  color: #1a2a6c;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 10px 0;
+  transition: all 0.3s;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.grabbing {
+  animation: pulse 0.5s infinite alternate;
+}
+
+@keyframes pulse {
+  from {
+    box-shadow: 0 0 10px #00c9ff;
+  }
+
+  to {
+    box-shadow: 0 0 20px #00c9ff, 0 0 30px #00c9ff;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
