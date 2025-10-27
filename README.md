@@ -33,7 +33,7 @@
 ## 🧐 About The Project
 
 <div align="center">
-  <video src="./demo.mp4" alt="Gesture Recognition Demo" width="600"/>
+  <img src="./demo.webp" alt="Gesture Recognition Demo" width="600"/>
 </div>
 
 A real-time gesture recognition system that:

@@ -33,7 +33,7 @@
 ## 🧐 项目介绍
 
 <div align="center">
-  <video src="./demo.mp4" alt="手势识别演示" width="600"/>
+  <img src="./demo.webp" alt="手势识别演示" width="600"/>
 </div>
 
 一个实时手势识别系统，具有以下特点：
